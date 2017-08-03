@@ -13,6 +13,7 @@ export default class OutLink extends Component {
     }
 
     const { children, to, label, ...restProps } = this.props
+
     return (
       <a
         {...restProps}

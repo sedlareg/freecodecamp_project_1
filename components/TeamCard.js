@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 export default class TeamCard extends Component {
   render () {
     let cardImg = ''
-
     if (this.props.imgUrl !== '') {
       cardImg = `<img src="${this.props.imgUrl}" title="${this.props
         .name}" style="width: 100px; height: 100px"/>`

@@ -11,7 +11,6 @@ export default class Layout extends Component {
   }
   render () {
     const { title, description, headerType, children } = this.props
-
     return (
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         <Head title={title} description={description} />
