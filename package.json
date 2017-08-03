@@ -11,9 +11,32 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "husky": "^0.13.4",
+    "lint-staged": "^3.6.1",
+    "prettier": "^1.4.4",
+    "standard": "^10.0.2"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "prettier 'utils/**/*.js' 'static/js/**/*.js' 'components/**/*.js' 'pages/**/*.js' '*.js' --write --single-quote --no-semi && standard --fix",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --single-quote --no-semi",
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "standard": {
+    "globals": [
+      "fetch",
+      "$"
+    ],
+    "parser": "babel-eslint"
   }
 }
