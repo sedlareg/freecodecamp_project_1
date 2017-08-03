@@ -15,107 +15,65 @@ class Footer extends Component {
               <h5 className='light'>Contact</h5>
               <address>
                 <p typeof='schema:PostalAddress'>
-                  <span property='schema:streetAddress'>
-                    1235 University Boulevard
-                  </span>
+                  <span property='schema:streetAddress'>Beim Feldtor 13</span>
                   <br />
-                  <span property='schema:addressLocality'>
-                    Steubenville
-                  </span>,{' '}
-                  <abbr title='Ohio' property='schema:addressRegion'>
-                    OH
-                  </abbr>{' '}
-                  <span property='schema:postalCode'>43952</span>{' '}
-                  <abbr property='schema:addressCountry'>USA</abbr>
+                  <span property='schema:postalCode'>86513</span>{' '}
+                  <span property='schema:addressLocality'>Bayersried</span>,{' '}
+                  <abbr property='schema:addressCountry'>Germany</abbr>
                   <br />
                   <a
-                    href='tel:+17402836754'
+                    href='tel:+179.......'
                     property='telephone'
                     className='white-text'
                   >
-                    740.283.6754
+                    +49 179 ... ....
                   </a>
                   <br />
                   <a
-                    href='mailto:ci@franciscan.edu'
+                    href='mailto:geraldes@mooneye.de'
                     property='email'
                     className='white-text'
                   >
-                    ci@franciscan.edu
+                    geraldes@mooneye.de
                   </a>
                 </p>
               </address>
             </div>
             <div className='col s12 m6'>
-              <h5 className='light'>About the Catechetical Institute</h5>
+              <h5 className='light'>About Mooneye Productions</h5>
               <p>
-                The Catechetical Institute at Franciscan University exists to
-                train and support the key catechists in any situation—priests,
-                deacons, parents, or laity, whether professional or volunteer.
-                Through conferences, online workshops, videos, audio, personal
-                mentorship, and a wealth of resources produced by Franciscan
-                University, all involved in the work of catechesis will find new
-                ideas, new approaches, new techniques, and a new confidence to
-                do the work of catechesis.
+                The bilge rat whines death like a shiny swabbie. Damn yer
+                lubber, feed the sea. The rum trades with life, lead the
+                quarter-deck until it rises. The shore tastes with hunger, trade
+                the bahamas until it grows!
               </p>
             </div>
             <div className='col s12 m3'>
               <h5 className='light'>Related Links</h5>
               <ul>
-                {/*  <li><a href="http://www.franciscanathome.com/" title="Franciscan at Home" target="_blank">Franciscan at Home</a></li> */}
                 <li>
                   <OutLink
                     label='toMainSiteFooterLink'
-                    to='https://www.franciscan.edu/'
-                    title='Franciscan University of Steubenville'
+                    to='https://www.umami-nation.com/'
+                    title='Umami-Nation'
+                    target='_blank'
                   >
-                    Franciscan University
+                    Umami-Nation
                   </OutLink>
                 </li>
                 <li>
                   <a
-                    href='https://www.steubenvilleconferences.com/'
-                    title='Steubenville Conferences'
+                    href='https://www.eramon.de/'
+                    title='ERAMON GmbH'
                     target='_blank'
                   >
-                    Steubenville Conferences
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='https://www.franciscan.edu/veritas'
-                    title='Veritas Center'
-                    target='_blank'
-                  >
-                    Veritas Center for Ethics in Public Life
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='http://www.faithandreason.com/'
-                    title='Faith and Reason'
-                    target='_blank'
-                  >
-                    Faith and Reason
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='https://review.catechetics.com/'
-                    title='The Catechetical Review'
-                    target='_blank'
-                  >
-                    The Catechetical Review
+                    ERAMON GmbH
                   </a>
                 </li>
                 <li style={{ marginTop: '8px' }}>
-                  <a
-                    href='https://giving.franciscan.edu/'
-                    title='Donate'
-                    target='_blank'
-                  >
+                  <a href='/contact' title='Contact'>
                     <button className='btn waves-effect waves-light btn-inverted-white'>
-                      Donate
+                      Contact us
                     </button>
                   </a>
                 </li>
@@ -126,39 +84,23 @@ class Footer extends Component {
         <div className='footer-copyright'>
           <div className='container'>
             <div className='row hide-on-large-only center'>
-              <a
-                href='https://www.franciscan.edu/ferpa/'
-                title='Privacy Policy'
-                target='_blank'
-              >
-                Privacy Policy
+              <a href='/imprint' title='Imprint'>
+                Imprint
               </a>
-              <a
-                href='https://www.franciscan.edu/consumer-information/non-discrimination/'
-                title='Nondiscrimination Statement'
-                target='_blank'
-              >
-                Nondiscrimination Statement
+              <a href='/privacy' title='Privacy'>
+                Privacy
               </a>
             </div>
-            © <span id='copyright-date'>{this.currentYear()}</span> Franciscan
-            University of Steubenville
+            <div className='left'>
+              © <span id='copyright-date'>{this.currentYear()}</span> Mooneye
+              Productions
+            </div>
           </div>
-          <a
-            className='hide-on-med-and-down'
-            href='https://www.franciscan.edu/ferpa/'
-            title='Privacy Policy'
-            target='_blank'
-          >
-            Privacy Policy
+          <a className='hide-on-med-and-down' href='/imprint' title='Imprint'>
+            Imprint
           </a>
-          <a
-            className='hide-on-med-and-down'
-            href='https://www.franciscan.edu/consumer-information/non-discrimination/'
-            title='Nondiscrimination Statement'
-            target='_blank'
-          >
-            Nondiscrimination Statement
+          <a className='hide-on-med-and-down' href='/privacy' title='Privacy'>
+            Privacy
           </a>
         </div>
       </footer>

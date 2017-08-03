@@ -29,7 +29,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "prettier 'utils/**/*.js' 'static/js/**/*.js' 'components/**/*.js' 'pages/**/*.js' '*.js' --write --single-quote --no-semi && standard --fix"
+    "lint": "prettier 'utils/**/*.js' 'static/js/**/*.js' 'components/**/*.js' 'pages/**/*.js' '*.js' --write --single-quote --no-semi && standard --fix",
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.js": [

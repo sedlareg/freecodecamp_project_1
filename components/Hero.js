@@ -19,7 +19,7 @@ class Hero extends Component {
                 lineHeight: '.9'
               }}
             >
-              Forming those who form others.
+              Where is the ordinary klingon.
             </h1>
           </div>
           <div className='col s12 m6' />
@@ -28,11 +28,11 @@ class Hero extends Component {
           #hero {
             height: 68vh;
             max-height: 500px;
-            background-image: url(/static/img/monstrance-2000w-op.jpg);
+            background-image: url(/static/img/mooneye_hero.jpg);
             background-size: 74vw;
             background-repeat: no-repeat;
             background-position-x: 157%;
-            background-position-y: 36%;
+            background-position-y: 25%;
             background-color: #000;
             margin-top: -74px;
             padding-bottom: 0;
@@ -46,8 +46,8 @@ class Hero extends Component {
           }
           @media screen and (max-width: 1200px) {
             #hero {
-              background-image: url("/static/img/monstrance-2000w-op.jpg");
-              background-position-y: 26%;
+              background-image: url("/static/img/mooneye_hero.jpg");
+              background-position-y: 15%;
             }
           }
           #hero h1 {

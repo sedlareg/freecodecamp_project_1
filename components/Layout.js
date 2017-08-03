@@ -12,13 +12,13 @@ export default class Layout extends Component {
     }
   }
   render () {
-    // const { title, description, headerType, children } = this.props;
+    const { title, description, headerType, children } = this.props
 
     return (
       <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <Head title='project 1' description='testdescription' />
-        <Nav />
-        {/* {children} */}
+        <Head title={title} description={description} />
+        <Nav headerType={headerType} />
+        {children}
         <Footer />
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js' />
         <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js' />

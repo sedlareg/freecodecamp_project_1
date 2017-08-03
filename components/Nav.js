@@ -4,7 +4,7 @@ import OutLink from '../components/OutLink'
 
 class Nav extends Component {
   componentDidMount () {
-    // initSideNav()
+    // initSideNav();
   }
 
   render () {
@@ -16,14 +16,14 @@ class Nav extends Component {
               <OutLink
                 className='fus-branding'
                 label='toMainSiteBrandingLink'
-                to='https://www.franciscan.edu'
-                title='Franciscan University of Steubenville'
+                to='https://www.mooneye.de'
+                title='Mooneye Productions'
               >
-                Franciscan University of Steubenville
+                Mooneye Productions
               </OutLink>
 
               <a href='/' className='brand-logo'>
-                <img src='/static/img/ci-logo.png' />
+                <img src='/static/img/ci-logo.gif' />
               </a>
 
               <a
@@ -45,10 +45,10 @@ class Nav extends Component {
             </div>
           </nav>
         </div>
-        <ul className='side-nav' id='mobile-demo' style={{ width: '300px' }}>
+        <ul className='side-nav' id='mobile-demo' style={{ width: '200px' }}>
           <li className='logo'>
             <a href='/' className='brand-logo'>
-              <img src='/static/img/ci-logo.png' />
+              <img src='/static/img/ci-logo.gif' />
             </a>
           </li>
           <li>
