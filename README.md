@@ -35,7 +35,7 @@ question license (MIT):
 ```
 #### Basic Packages
 Now we are ready to install some basic stuff.
-* [**Next.js**][2]
+* [**Next.js**][2] - Just to save time in creating a basic react with routing etc.
 * [**React**][3]
 * [**React-DOM**][4]
 ```
@@ -68,6 +68,20 @@ With a little bit of sed power we add some basic npm scripts to start and build 
   s/  \}/  \},\n  "scripts\": \{\n    "dev\": \"next\",\n    "build\": \"next build\",\n    "start\": \"next start\"\n  \}/
   }' package.json
 ```
+To test the setup we create a pages folder and an index.js file...
+```typescript jsx
+export default () => {
+  <div>Welcome to next.js!</div>
+}
+```
+...and run the yarn script called "dev"
+```
+λ yarn run dev
+DONE  Compiled successfully in 2977ms
+> Ready on http://localhost:3000
+```
+Now we can open the browser and test if our react app works.
+
 [1]: https://yarnpkg.com/en/
 [2]: https://github.com/zeit/next.js/
 [3]: https://facebook.github.io/react/
