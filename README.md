@@ -1,6 +1,6 @@
 # freecodecamp_project_1
 Just a test for react with full inital setup
-##Init Project
+## Init Project
 
 #### Directories
 ```
@@ -17,7 +17,7 @@ $> git branch --set-upstream-to=origin/master master
 ```
 #### YARN
 ##### Installation
-I am using Git-Bash for Windows and MINGW64 so i had to install yarn like this
+I am using Git-Bash for Windows and MINGW64 so i had to install [**yarn**][1] like this
 ```
 $> curl -o- -L https://yarnpkg.com/install.sh | bash
 $> yarn -v
@@ -34,3 +34,15 @@ question repository url: git@github.com:sedlareg/freecodecamp_project_1.git
 question author: Geraldes Pereira Ferreira
 question license (MIT):
 ```
+#### Basic Packages
+Now we are ready to install some basic stuff.
+* [**Next.js**][2]
+* [**React**][3]
+* [**React-DOM**][4]
+```
+$> yarn add next react react-dom
+``` 
+[1]: https://yarnpkg.com/en/
+[2]: https://github.com/zeit/next.js/
+[3]: https://facebook.github.io/react/
+[4]: https://facebook.github.io/react/docs/react-dom.html
