@@ -82,7 +82,18 @@ DONE  Compiled successfully in 2977ms
 ```
 Now we can open the browser and test if our react app works.
 
+#### Additional Packages
+* [**eslint**][5]
+* [**prettier**][6]
+* [**husk**][7]
+* [**lint-staged**][8]
+
 [1]: https://yarnpkg.com/en/
 [2]: https://github.com/zeit/next.js/
 [3]: https://facebook.github.io/react/
 [4]: https://facebook.github.io/react/docs/react-dom.html
+[5]: http://eslint.org/
+[6]: https://github.com/prettier/prettier
+[7]: https://github.com/typicode/husky
+[8]: https://github.com/okonet/lint-staged
+[9]: https://jaketrent.com/post/format-javascript-with-prettier/

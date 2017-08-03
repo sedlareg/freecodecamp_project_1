@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import Head from './Head'
-import Nav from './Nav'
-import Footer from './Footer'
+import { Head, Nav, Footer } from '../components'
 import { initGA } from '../utils/analytics'
 
 export default class Layout extends Component {

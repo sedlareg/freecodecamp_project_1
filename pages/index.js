@@ -1,7 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout'
-import Hero from '../components/Hero'
-import StickyNav from '../components/StickyNav'
+import { Layout, Hero, StickyNav } from '../components'
 import { logPageView } from '../utils/analytics'
 import 'isomorphic-fetch'
 

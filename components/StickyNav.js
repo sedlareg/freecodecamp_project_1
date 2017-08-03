@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 
-class StickyNav extends Component {
+export default class StickyNav extends Component {
   componentDidMount () {
     stickyNav()
   }
@@ -69,5 +69,3 @@ class StickyNav extends Component {
     )
   }
 }
-
-export default StickyNav

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
-import OutLink from '../components/OutLink'
+import { OutLink } from '../components'
 
-class Nav extends Component {
+export default class Nav extends Component {
   componentDidMount () {
     // initSideNav();
   }
@@ -123,5 +123,3 @@ class Nav extends Component {
     )
   }
 }
-
-export default Nav

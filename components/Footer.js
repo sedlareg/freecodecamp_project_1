@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import OutLink from './OutLink'
-class Footer extends Component {
+import { OutLink } from '../components'
+export default class Footer extends Component {
   currentYear () {
     let today = new Date()
     return today.getFullYear()
@@ -107,5 +107,3 @@ class Footer extends Component {
     )
   }
 }
-
-export default Footer

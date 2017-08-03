@@ -1,0 +1,8 @@
+export { default as Footer } from './Footer'
+export { default as Head } from './Head'
+export { default as Hero } from './Hero'
+export { default as Layout } from './Layout'
+export { default as Nav } from './Nav'
+export { default as OutLink } from './OutLink'
+export { default as StickyNav } from './StickyNav'
+export { default as TeamCards } from './TeamCards'
