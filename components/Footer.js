@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import OutLink from './OutLink'
 class Footer extends Component {
   currentYear () {
     let today = new Date()
@@ -7,9 +8,9 @@ class Footer extends Component {
 
   render () {
     return (
-      <footer className='page-foot home-view'>
+      <footer className='page-footer'>
         <div className='container'>
-          <div className='row'>
+          <div className='row white-text'>
             <div className='col s12 m3'>
               <h5 className='light'>Contact</h5>
               <address>
@@ -36,11 +37,11 @@ class Footer extends Component {
                   </a>
                   <br />
                   <a
-                    href='mailto:geraldes@mooneye.de'
+                    href='mailto:ci@franciscan.edu'
                     property='email'
                     className='white-text'
                   >
-                    geraldes@mooneye.de
+                    ci@franciscan.edu
                   </a>
                 </p>
               </address>
@@ -62,6 +63,15 @@ class Footer extends Component {
               <h5 className='light'>Related Links</h5>
               <ul>
                 {/*  <li><a href="http://www.franciscanathome.com/" title="Franciscan at Home" target="_blank">Franciscan at Home</a></li> */}
+                <li>
+                  <OutLink
+                    label='toMainSiteFooterLink'
+                    to='https://www.franciscan.edu/'
+                    title='Franciscan University of Steubenville'
+                  >
+                    Franciscan University
+                  </OutLink>
+                </li>
                 <li>
                   <a
                     href='https://www.steubenvilleconferences.com/'

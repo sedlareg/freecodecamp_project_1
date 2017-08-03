@@ -7,9 +7,16 @@
   "author": "Geraldes Pereira Ferreira",
   "license": "MIT",
   "dependencies": {
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "express": "^4.15.3",
+    "lodash.debounce": "^4.0.8",
+    "lru-cache": "^4.1.1",
     "next": "^2.4.9",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-ga": "^2.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -22,8 +29,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "prettier 'utils/**/*.js' 'static/js/**/*.js' 'components/**/*.js' 'pages/**/*.js' '*.js' --write --single-quote --no-semi && standard --fix",
-    "precommit": "lint-staged"
+    "lint": "prettier 'utils/**/*.js' 'static/js/**/*.js' 'components/**/*.js' 'pages/**/*.js' '*.js' --write --single-quote --no-semi && standard --fix"
   },
   "lint-staged": {
     "*.js": [
