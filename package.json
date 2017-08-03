@@ -1,0 +1,9 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "freecodecamp react project1",
+  "main": "index.js",
+  "repository": "git@github.com:sedlareg/freecodecamp_project_1.git",
+  "author": "Geraldes Pereira Ferreira",
+  "license": "MIT"
+}
