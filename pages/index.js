@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, TeamCard } from '../components'
+import { Layout, Section, TeamCard } from '../components'
 import { logPageView } from '../utils/analytics'
 import 'isomorphic-fetch'
 
@@ -13,6 +13,7 @@ export default class extends React.Component {
     return (
       <Layout title='Home' description='startpage' hero='show'>
         <main>
+          <Section />
           <TeamCard />
         </main>
       </Layout>
