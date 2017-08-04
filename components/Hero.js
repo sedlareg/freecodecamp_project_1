@@ -8,14 +8,14 @@ export default class Hero extends Component {
         style={{ marginTop: '-150px' }}
       >
         <link
-          href='https://fonts.googleapis.com/css?family=Allura'
+          href='https://fonts.googleapis.com/css?family=Audiowide'
           rel='stylesheet'
         />
         <div className='row right valign white-text'>
           <div className='col s12 m6'>
             <h1
               style={{
-                fontFamily: "'Allura', cursive",
+                fontFamily: "'Audiowide', cursive",
                 lineHeight: '.9'
               }}
             >

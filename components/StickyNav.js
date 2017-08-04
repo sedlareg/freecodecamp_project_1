@@ -53,7 +53,7 @@ export default class StickyNav extends Component {
               color: #fff;
               text-transform: uppercase;
               font-size: 22px;
-              font-family: 'Cinzel', serif;
+              font-family: 'Josefin Sans', sans-serif;
               cursor: pointer;
               padding: 6px 12px 7px 12px;
               line-height: 19px;

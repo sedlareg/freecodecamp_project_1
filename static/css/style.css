@@ -35,7 +35,8 @@
     font-size: 17px; } }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Cinzel', serif; }
+  font-family: 'Muli', sans-serif;
+}
 
 @media screen and (max-width: 400px) {
   h2 {
@@ -184,7 +185,7 @@ nav .fus-branding {
   position: absolute;
   top: -16px;
   left: 16px;
-  font-family: 'Cinzel', serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;}
 @media screen and (max-width: 992px), screen and (max-height: 500px) {
   nav .fus-branding {
@@ -236,7 +237,7 @@ nav .brand-logo img {
   position: absolute;
   top: -20px;
   left: 16px;
-  font-family: 'Cinzel', serif; }
+  font-family: 'Josefin Sans', sans-serif; }
 @media screen and (max-width: 600px), screen and (max-height: 500px) {
   .interior nav .fus-branding {
     top: -18px; } }
@@ -304,7 +305,7 @@ nav .brand-logo img {
   color: #fff;
   text-transform: uppercase;
   font-size: 20px;
-  font-family: 'Cinzel', serif;
+  font-family: 'Josefin Sans', sans-serif;
   cursor: pointer;
   padding: 4px 12px 7px 12px;
   line-height: 16px;
