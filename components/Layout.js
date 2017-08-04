@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Head, Nav, Footer } from '../components'
+import { Footer, Head, Hero, Nav, StickyNav } from '../components'
 import { initGA } from '../utils/analytics'
 
 export default class Layout extends Component {
@@ -10,11 +10,13 @@ export default class Layout extends Component {
     }
   }
   render () {
-    const { title, description, headerType, children } = this.props
+    const { title, description, headerType, hero, children } = this.props
     return (
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         <Head title={title} description={description} />
         <Nav headerType={headerType} />
+        {hero === 'show' && <Hero />}
+        <StickyNav />
         {children}
         <Footer />
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js' />

@@ -5,7 +5,7 @@ export default class Hero extends Component {
       <div
         className='section valign-wrapper hide-on-med-and-down'
         id='hero'
-        style={{ marginTop: '-83px' }}
+        style={{ marginTop: '-150px' }}
       >
         <link
           href='https://fonts.googleapis.com/css?family=Allura'
