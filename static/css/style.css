@@ -291,7 +291,7 @@ nav .brand-logo img {
 
 .bottom-nav {
   text-align: center;
-  background-color: #8e1b21;
+  background-color: #598d8e;
   padding: 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
 .bottom-nav ul {
@@ -313,7 +313,7 @@ nav .brand-logo img {
 }
 
 .bottom-nav ul li a:hover {
-  background-color: hsla(357, 68%, 28%, 1);
+  background-color: hsl(172, 60%, 48%);
 }
 
 @media screen and (max-width: 600px) {
@@ -470,7 +470,7 @@ nav .brand-logo img {
 footer.page-footer {
   margin-top: 0px;
   padding-top: 20px;
-  background-color: #8e1b21; }
+  background-color: #598d8e; }
 
 footer.page-footer .row {
   margin-bottom: 0px;

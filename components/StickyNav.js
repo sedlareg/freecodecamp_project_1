@@ -61,7 +61,7 @@ export default class StickyNav extends Component {
               font-weight: 600;
             }
             .bottom-nav ul li a:hover {
-              background-color: hsla(357, 68%, 28%, 1);
+              background-color: hsl(172, 60%, 50%);
             }
           `}
         </style>
