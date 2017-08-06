@@ -3,3 +3,5 @@
 /.idea/
 /.next/
 /yarn-error.log
+/build/
+/out/
