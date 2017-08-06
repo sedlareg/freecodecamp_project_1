@@ -29,30 +29,33 @@ export default class Hero extends Component {
             height: 68vh;
             max-height: 500px;
             background-image: url(/static/img/mooneye_hero.jpg);
-            background-size: 74vw;
+            background-size: 100vw;
             background-repeat: no-repeat;
-            background-position-x: 157%;
             background-position-y: 25%;
             background-color: #000;
             margin-top: -74px;
             padding-bottom: 0;
           }
+          #hero h1 {
+            padding-top: 180px;
+            font-size: 81px;
+          }
           @media screen and (min-width: 2000px) {
             #hero {
-              background-size: 60vw;
-              background-position-y: 39%;
-              background-position-x: 128%;
+              background-size: 100vw;
+              background-position-y: 25%;
+              background-position-x: 0%;
             }
           }
           @media screen and (max-width: 1200px) {
             #hero {
               background-image: url("/static/img/mooneye_hero.jpg");
-              background-position-y: 15%;
+              background-position-y: 35%;
             }
-          }
-          #hero h1 {
-            padding-top: 180px;
-            font-size: 81px;
+            #hero h1 {
+              padding-top: 163px;
+              font-size: 55px;
+            }
           }
           @media screen and (max-height: 650px) {
             #hero h1 {

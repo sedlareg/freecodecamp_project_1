@@ -175,11 +175,10 @@ nav {
     background-color: #000;
     height: 102px;
     background-image: url("../img/mooneye_hero.jpg");
-    background-size: 30vw;
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: 10%;
-    border-bottom: 4px solid #8e1b21; } }
+    background-position-y: 30%;
+    border-bottom: 4px solid #07075d; } }
 
 nav .fus-branding {
   position: absolute;
@@ -221,13 +220,12 @@ nav .brand-logo img {
   background-color: #000;
   height: 102px;
   background-image: url("../img/mooneye_hero.jpg");
-  background-size: 30vw;
   background-repeat: no-repeat;
   background-position-x: right;
-  background-position-y: 10%; }
+  background-position-y: 30%; }
 @media screen and (max-width: 992px) {
   .interior nav {
-    border-bottom: 4px solid #8e1b21; } }
+    border-bottom: 4px solid #07075d; } }
 @media screen and (max-width: 450px) {
   .interior nav {
     background-position-y: 16%;
