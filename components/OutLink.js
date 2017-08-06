@@ -1,8 +1,15 @@
-/* Adapted from https://github.com/react-ga/react-ga/issues/118 */
 import React, { Component } from 'react'
 import ReactGA from 'react-ga'
+import PropTypes from 'prop-types'
 
 export default class OutLink extends Component {
+  static propTypes = {
+    children: PropTypes.string,
+    to: PropTypes.string,
+    label: PropTypes.string,
+    restProps: PropTypes.object
+  }
+
   render () {
     const handleOutbound = eventLabel => {
       ReactGA.event({

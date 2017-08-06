@@ -20,7 +20,7 @@ export default class extends React.Component {
       <div className='row' key={key}>
         <div className='col s12'>
           <a href={`/${slug}`}>
-            <h3 style={{ marginBottom: '0', color: '#598d8e' }}>
+            <h3 style={{ marginBottom: '0', color: '#284980' }}>
               {title.rendered}
             </h3>
           </a>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
-import { OutLink } from '../components'
 
 export default class Nav extends Component {
   componentDidMount () {
@@ -13,19 +12,9 @@ export default class Nav extends Component {
         <div>
           <nav className='main-nav search-nav'>
             <div className='nav-wrapper'>
-              <OutLink
-                className='fus-branding'
-                label='toMainSiteBrandingLink'
-                to='https://www.mooneye.de'
-                title='Mooneye Productions'
-              >
+              <a href='/' className='fus-branding'>
                 Mooneye Productions
-              </OutLink>
-
-              <a href='/' className='brand-logo'>
-                <img src='/static/img/ci-logo.gif' />
               </a>
-
               <a
                 href='#'
                 data-activates='mobile-demo'
@@ -46,40 +35,40 @@ export default class Nav extends Component {
           </nav>
         </div>
         <ul className='side-nav' id='mobile-demo' style={{ width: '200px' }}>
-          <li className='logo'>
-            <a href='/' className='brand-logo'>
-              <img src='/static/img/ci-logo.gif' />
-            </a>
+          <li>
+            <Link prefetch href='/' title='Home'>
+              <a>Home</a>
+            </Link>{' '}
           </li>
           <li>
-            {' '}<Link prefetch href='/about'>
+            <Link prefetch href='/about'>
               <a>About</a>
             </Link>{' '}
           </li>
           <li>
-            {' '}<Link prefetch href='/team'>
-              <a>Team</a>
-            </Link>{' '}
-          </li>
-          <li>
-            {' '}<Link prefetch href='/courses'>
-              <a>Courses</a>
-            </Link>{' '}
-          </li>
-          <li>
-            {' '}<Link prefetch href='/events'>
-              <a>Events</a>
-            </Link>{' '}
-          </li>
-          <li>
-            {' '}<Link prefetch href='/resources'>
-              <a>Resources</a>
-            </Link>{' '}
-          </li>
-          <li>
-            <Link prefetch href='/news' title='News'>
-              <a>News</a>
+            <Link prefetch href='/blog' title='Blog'>
+              <a>Blog</a>
             </Link>
+          </li>{' '}
+          <li>
+            {' '}<Link prefetch href='/reboot'>
+              <a>Reboot</a>
+            </Link>{' '}
+          </li>
+          <li>
+            {' '}<Link prefetch href='/roadmap'>
+              <a>Roadmap</a>
+            </Link>{' '}
+          </li>
+          <li>
+            {' '}<Link prefetch href='/recipes'>
+              <a>Recipes</a>
+            </Link>{' '}
+          </li>
+          <li>
+            {' '}<Link prefetch href='/links'>
+              <a>Links</a>
+            </Link>{' '}
           </li>
         </ul>
         <style jsx>{`

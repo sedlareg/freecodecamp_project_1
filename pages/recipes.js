@@ -2,18 +2,18 @@ import React from 'react'
 import { Layout, Title } from '../components'
 import { logPageView } from '../utils/analytics'
 
-export default class About extends React.Component {
+export default class Recipes extends React.Component {
   componentDidMount () {
     logPageView()
   }
 
   render () {
     return (
-      <Layout title='About' description='all about me' headerType='interior'>
-        <main id='about'>
-          <Title title='About' imgPath='/static/new/about-title.jpg' />
+      <Layout title='Recipes' description='all recipes' headerType='interior'>
+        <main id='recipes'>
+          <Title title='Recipes' imgPath='/static/new/recipes-title.jpg' />
           <div className='container'>
-            <div className='section'>All about me</div>
+            <div className='section'>Recipes</div>
           </div>
         </main>
       </Layout>

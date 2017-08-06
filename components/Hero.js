@@ -49,7 +49,7 @@ export default class Hero extends Component {
           }
           @media screen and (max-width: 1200px) {
             #hero {
-              background-image: url("/static/img/mooneye_hero.jpg");
+              background-image: url(/static/img/mooneye_hero.jpg);
               background-position-y: 35%;
             }
             #hero h1 {

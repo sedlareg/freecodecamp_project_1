@@ -289,7 +289,7 @@ nav .brand-logo img {
 
 .bottom-nav {
   text-align: center;
-  background-color: #598d8e;
+  background-color: #284980;
   padding: 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
 .bottom-nav ul {
@@ -328,7 +328,6 @@ nav .brand-logo img {
 
 @media screen and (min-width: 993px) {
   #san-damiano {
-    background-image: url("../img/san-damiano.gif");
     background-size: 500px;
     background-repeat: no-repeat;
     background-position-x: 7%;
@@ -337,13 +336,11 @@ nav .brand-logo img {
 }
 
 .white-background-flourish {
-  background-image: url("../img/motif1.png"), url("../img/motif1-reverse.png");
   background-repeat: no-repeat;
   background-position: -10% 50%, 111% 50%; }
 
 .red-background-flourish {
   background-color: #a61f26;
-  background-image: url("../img/motif2.png"), url("../img/motif2-reverse.png");
   background-repeat: repeat-y;
   background-position: 0% 50%, 100% 50%; }
 
@@ -406,7 +403,6 @@ nav .brand-logo img {
   cursor: pointer; }
 .horizontal .card-content {
   padding: 8px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/motif1-reverse.png");
   background-repeat: no-repeat;
   background-position: 250% 25%;
   max-height: 100px; }
@@ -468,7 +464,7 @@ nav .brand-logo img {
 footer.page-footer {
   margin-top: 0px;
   padding-top: 20px;
-  background-color: #598d8e; }
+  background-color: #284980; }
 
 footer.page-footer .row {
   margin-bottom: 0px;

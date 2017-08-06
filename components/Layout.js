@@ -10,6 +10,10 @@ export default class Layout extends Component {
     }
   }
   render () {
+    const jQueryLib =
+      'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js'
+    const materializeLib =
+      'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js'
     const { title, description, headerType, hero, children } = this.props
     return (
       <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -19,8 +23,8 @@ export default class Layout extends Component {
         <StickyNav />
         {children}
         <Footer />
-        <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js' />
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js' />
+        <script src={jQueryLib} />
+        <script src={materializeLib} />
         <script src='/static/js/app.js' />
       </div>
     )

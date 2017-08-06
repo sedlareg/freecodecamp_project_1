@@ -1,17 +1,22 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 export default class Title extends Component {
+  static propTypes = {
+    title: PropTypes.string,
+    imgPath: PropTypes.string
+  }
+
   render () {
+    const { title } = this.props
+
     return (
       <section id='about' className='interior-page-title valign-wrapper'>
         <h1 className='center light valign'>
-          {this.props.title}
+          {title}
         </h1>
         <style jsx>{`
           h1 {
-            background-image: url(/static/img/squiggly1.png);
-            background-repeat: no-repeat;
-            background-position: 50% 69px;
             margin: 0 auto;
             font-size: 50px;
             padding: 16px 0 19px 0;
@@ -31,13 +36,11 @@ export default class Title extends Component {
               min-height: 39vh;
             }
             h1 {
-              background-image: url(/static/img/squiggly1.png),
-                linear-gradient(
+              linear-gradient(
                   rgba(255, 255, 255, 0.75),
                   rgba(255, 255, 255, 0.75)
-                );
-              background-repeat: no-repeat;
-              background-position: 50% 90px, 50%;
+               );
+              background-color: rgba(255, 255, 255, 0.5);
               border-radius: 50%;
               margin: 0 auto;
               font-size: 54px;
@@ -52,29 +55,30 @@ export default class Title extends Component {
               #about .interior-page-title {
                 background-image: url(/static/img/new/about-title.jpg);
               }
-              #courses .interior-page-title {
-                background-image: url(/static/img/new/courses-title.jpg);
+              #blog .interior-page-title {
+                background-image: url(/static/img/new/blog-title.jpg);
               }
-              #events .interior-page-title {
-                background-image: url(/static/img/new/events-title.jpg);
-                background-position-y: 0;
+              #reboot .interior-page-title {
+                background-image: url(/static/img/new/reboot-title.jpg);
               }
-              #single-event .interior-page-title {
-                background-image: url(/static/img/new/events-title.jpg);
-                background-position-y: 0;
+              #roadmap .interior-page-title {
+                background-image: url(/static/img/new/roadmap-title.jpg);
+                background-position-y: 60%;
               }
-              #news .interior-page-title {
-                background-image: url(/static/img/news-title.jpg);
-              }
-              #resources .interior-page-title {
-                background-image: url(/static/img/new/resources-title.jpg);
+              #recipes .interior-page-title {
+                background-image: url(/static/img/new/recipes-title.jpg);
                 background-position-y: 97%;
               }
-              #single-news .interior-page-title {
-                background-image: url(/static/img/new/campus-11.jpg);
+              #links .interior-page-title {
+                background-image: url(/static/img/new/links-title.jpg);
+                background-position-y: 43%;
               }
-              #team .interior-page-title {
-                background-image: url(/static/img/new/team-title.jpg);
+              #single-day .interior-page-title {
+                background-image: url(/static/img/new/roadmap-title.jpg);
+                background-position-y: 0;
+              }
+              #single-post .interior-page-title {
+                background-image: url(/static/img/new/blog-title.jpg);
               }
             }
           `}

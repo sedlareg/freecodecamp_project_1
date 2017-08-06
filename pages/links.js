@@ -2,18 +2,18 @@ import React from 'react'
 import { Layout, Title } from '../components'
 import { logPageView } from '../utils/analytics'
 
-export default class About extends React.Component {
+export default class Links extends React.Component {
   componentDidMount () {
     logPageView()
   }
 
   render () {
     return (
-      <Layout title='About' description='all about me' headerType='interior'>
-        <main id='about'>
-          <Title title='About' imgPath='/static/new/about-title.jpg' />
+      <Layout title='Links' description='all links' headerType='interior'>
+        <main id='links'>
+          <Title title='Links' imgPath='/static/new/links-title.jpg' />
           <div className='container'>
-            <div className='section'>All about me</div>
+            <div className='section'>Links</div>
           </div>
         </main>
       </Layout>

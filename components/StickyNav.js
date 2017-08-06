@@ -17,28 +17,28 @@ export default class StickyNav extends Component {
             </Link>
           </li>
           <li>
-            <Link prefetch href='/team' title='Team'>
-              <a>Team</a>
+            <Link prefetch href='/blog' title='Blog'>
+              <a>Blog</a>
             </Link>
           </li>
           <li>
-            <Link prefetch href='/courses' title='Courses'>
-              <a>Courses</a>
+            <Link prefetch href='/reboot' title='Reboot'>
+              <a>Reboot</a>
             </Link>
           </li>
           <li>
-            <Link prefetch href='/events' title='Events'>
-              <a>Events</a>
+            <Link prefetch href='/roadmap' title='Roadmap'>
+              <a>Roadmap</a>
             </Link>
           </li>
           <li>
-            <Link prefetch href='/resources' title='Resources'>
-              <a>Resources</a>
+            <Link prefetch href='/recipes' title='Recipes'>
+              <a>Recipes</a>
             </Link>
           </li>
           <li>
-            <Link prefetch href='/news' title='News'>
-              <a>News</a>
+            <Link prefetch href='/links' title='Links'>
+              <a>Links</a>
             </Link>
           </li>
         </ul>
