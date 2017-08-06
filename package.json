@@ -9,7 +9,9 @@
   "dependencies": {
     "babel-plugin-react-html-attrs": "^2.0.0",
     "babel-preset-stage-0": "^6.24.1",
+    "es6-promise": "^4.1.1",
     "express": "^4.15.3",
+    "isomorphic-fetch": "^2.2.1",
     "lodash.debounce": "^4.0.8",
     "lru-cache": "^4.1.1",
     "next": "^2.4.9",
@@ -48,14 +50,17 @@
   },
   "eslintConfig": {
     "parserOptions": {
-      "ecmaVersion": 6,
+      "ecmaVersion": 8,
       "sourceType": "module",
       "ecmaFeatures": {
         "jsx": true
       }
     },
     "rules": {
-      "semi": ["error", "never"]
+      "semi": [
+        "error",
+        "never"
+      ]
     }
   }
 }
