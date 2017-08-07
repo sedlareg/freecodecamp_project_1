@@ -3,7 +3,7 @@ import { Layout, Error404 } from '../components'
 import 'isomorphic-fetch'
 import { logPageView } from '../utils/analytics'
 
-export default class SinglePost extends React.Component {
+export default class SingleRecipe extends React.Component {
   static async getInitialProps ({ query: { id } }) {
     const apiUrl = 'https://www.mooneye.de/wordpress/wp-json/wp/v2/'
     const params = `posts?slug=${id}`
@@ -18,9 +18,9 @@ export default class SinglePost extends React.Component {
 
   titleTag (props) {
     if (this.props.data.length > 0) {
-      return `${this.props.data[0].title.rendered} | Blog`
+      return `${this.props.data[0].title.rendered} | Recipes`
     }
-    return `404 | Blog`
+    return `404 | Recipes`
   }
 
   descriptionTag (props) {

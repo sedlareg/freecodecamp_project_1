@@ -11,7 +11,7 @@ export default class Blog extends React.Component {
 
   static async getInitialProps () {
     const apiUrl = 'https://www.mooneye.de/wordpress/wp-json/wp/v2/'
-    const params = 'posts'
+    const params = 'posts?categories=2'
     const res = await fetch(apiUrl.concat(params))
     const posts = await res.json()
 

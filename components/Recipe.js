@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export default class Post extends React.Component {
+export default class Recipe extends React.Component {
   static propTypes = {
     key: PropTypes.int,
     slug: PropTypes.string,
@@ -19,7 +19,7 @@ export default class Post extends React.Component {
     return (
       <div className='row' key={key}>
         <div className='col s12'>
-          <a href={`/blog/${slug}`}>
+          <a href={`/recipes/${slug}`}>
             <h3 style={{ marginBottom: '0', color: '#284980' }}>
               {title.rendered}
             </h3>
@@ -34,7 +34,7 @@ export default class Post extends React.Component {
           />
         </div>
         {excerpt.rendered.length < content.rendered.length &&
-          <a href={`/blog/${slug}`}>
+          <a href={`/recipes/${slug}`}>
             <span className='more-link'>&gt;&gt; Zum Beitrag</span>
           </a>}
         <style jsx>
