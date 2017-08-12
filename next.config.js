@@ -20,7 +20,9 @@ module.exports = {
       '/': { page: '/index' },
       '/about': { page: '/about' },
       '/blog': { page: '/blog' },
+      '/imprint': { page: '/imprint' },
       '/links': { page: '/links' },
+      '/privacy': { page: '/privacy' },
       '/reboot': { page: '/reboot' },
       '/recipes': { page: '/recipes' },
       '/roadmap': { page: '/roadmap' }

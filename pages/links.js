@@ -1,21 +1,33 @@
 import React from 'react'
-import { Layout, Title } from '../components'
-import { logPageView } from '../utils/analytics'
+import { Layout, StaticPage } from '../components'
+import 'isomorphic-fetch'
+import PropTypes from 'prop-types'
 
 export default class Links extends React.Component {
-  componentDidMount () {
-    logPageView()
+  static propTypes = {
+    page: PropTypes.array
+  }
+
+  static async getInitialProps () {
+    const apiUrl = 'https://www.mooneye.de/wordpress/wp-json/wp/v2/'
+    const params = 'pages?slug=links'
+    const res = await fetch(apiUrl.concat(params))
+    const page = await res.json()
+
+    return { page }
   }
 
   render () {
+    const { page } = this.props
+
     return (
-      <Layout title='Links' description='all links' headerType='interior'>
-        <main id='links'>
-          <Title title='Links' imgPath='/static/new/links-title.jpg' />
-          <div className='container'>
-            <div className='section'>Links</div>
-          </div>
-        </main>
+      <Layout title='Links2' description='all links' headerType='interior'>
+        <StaticPage
+          page={page}
+          title='Links'
+          mainId='links'
+          imgPath='/static/new/links-title.jpg'
+        />
       </Layout>
     )
   }

@@ -3,14 +3,14 @@ import { Layout, StaticPage } from '../components'
 import 'isomorphic-fetch'
 import PropTypes from 'prop-types'
 
-export default class Roadmap extends React.Component {
+export default class Privacy extends React.Component {
   static propTypes = {
     page: PropTypes.array
   }
 
   static async getInitialProps () {
     const apiUrl = 'https://www.mooneye.de/wordpress/wp-json/wp/v2/'
-    const params = 'pages?slug=roadmap'
+    const params = 'pages?slug=privacy'
     const res = await fetch(apiUrl.concat(params))
     const page = await res.json()
 
@@ -22,16 +22,11 @@ export default class Roadmap extends React.Component {
 
     return (
       <Layout
-        title='Roadmap'
-        description='all days to go'
+        title='Datenschutzerklärung'
+        description='Datenschutzerklärung'
         headerType='interior'
       >
-        <StaticPage
-          page={page}
-          title='Roadmap'
-          mainId='roadmap'
-          imgPath='/static/new/roadmap-title.jpg'
-        />
+        <StaticPage page={page} mainId='privacy' />
       </Layout>
     )
   }

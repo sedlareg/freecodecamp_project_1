@@ -36,7 +36,7 @@ export default class Nav extends Component {
         </div>
         <ul className='side-nav' id='mobile-demo' style={{ width: '200px' }}>
           <li>
-            <Link prefetch href='/' title='Home'>
+            <Link prefetch href='/'>
               <a>Home</a>
             </Link>{' '}
           </li>
@@ -46,7 +46,7 @@ export default class Nav extends Component {
             </Link>{' '}
           </li>
           <li>
-            <Link prefetch href='/blog' title='Blog'>
+            <Link prefetch href='/blog'>
               <a>Blog</a>
             </Link>
           </li>{' '}

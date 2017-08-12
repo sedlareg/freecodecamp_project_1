@@ -1,6 +1,12 @@
 'use strict'
 
 /* eslint-disable */
+function gaOptout() {
+  document.cookie =
+    disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/'
+  window[disableStr] = true
+}
+
 function initCourseSections() {
   // Course Section Click Handler
   $('.sub-section h3').click(function() {

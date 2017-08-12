@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 export default class Post extends React.Component {
   static propTypes = {
-    key: PropTypes.int,
     slug: PropTypes.string,
     title: PropTypes.object,
     content: PropTypes.object,
@@ -14,10 +13,10 @@ export default class Post extends React.Component {
   }
 
   render () {
-    const { key, slug, title, content, excerpt, date } = this.props
+    const { slug, title, content, excerpt, date } = this.props
 
     return (
-      <div className='row' key={key}>
+      <div className='row' key={this.props.i}>
         <div className='col s12'>
           <a href={`/blog/${slug}`}>
             <h3 style={{ marginBottom: '0', color: '#284980' }}>

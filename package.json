@@ -18,7 +18,8 @@
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-ga": "^2.2.0"
+    "react-ga": "^2.2.0",
+    "static-reducer": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -65,7 +66,10 @@
     "plugins": [
       "react"
     ],
-    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
     "rules": {
       "comma-dangle": 0,
       "react/jsx-uses-vars": 1,

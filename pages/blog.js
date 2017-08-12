@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 
 export default class Blog extends React.Component {
   static propTypes = {
-    posts: PropTypes.object
+    posts: PropTypes.array
   }
 
   static async getInitialProps () {
@@ -31,10 +31,10 @@ export default class Blog extends React.Component {
           <Title title='Blog' imgPath='/static/new/blog-title.jpg' />
           <div className='container'>
             <div className='section'>
-              {posts.map(function (post) {
+              {posts.map(function (post, i) {
                 return (
                   <Post
-                    key={post.id}
+                    key={i}
                     slug={post.slug}
                     title={post.title}
                     content={post.content}

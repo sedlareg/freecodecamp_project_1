@@ -12,32 +12,32 @@ export default class StickyNav extends Component {
       <div className='section bottom-nav'>
         <ul className='hide-on-med-and-down'>
           <li>
-            <Link prefetch href='/about' title='About'>
+            <Link prefetch href='/about'>
               <a>About</a>
             </Link>
           </li>
           <li>
-            <Link prefetch href='/blog' title='Blog'>
+            <Link prefetch href='/blog'>
               <a>Blog</a>
             </Link>
           </li>
           <li>
-            <Link prefetch href='/reboot' title='Reboot'>
+            <Link prefetch href='/reboot'>
               <a>Reboot</a>
             </Link>
           </li>
           <li>
-            <Link prefetch href='/roadmap' title='Roadmap'>
+            <Link prefetch href='/roadmap'>
               <a>Roadmap</a>
             </Link>
           </li>
           <li>
-            <Link prefetch href='/recipes' title='Recipes'>
+            <Link prefetch href='/recipes'>
               <a>Recipes</a>
             </Link>
           </li>
           <li>
-            <Link prefetch href='/links' title='Links'>
+            <Link prefetch href='/links'>
               <a>Links</a>
             </Link>
           </li>
