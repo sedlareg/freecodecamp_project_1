@@ -14,7 +14,7 @@ export default class Recipe extends React.Component {
   }
 
   render () {
-    const { key, slug, title, content, excerpt, date } = this.props
+    const { key, slug, title, content, excerpt } = this.props
 
     return (
       <div className='row' key={key}>
@@ -24,8 +24,6 @@ export default class Recipe extends React.Component {
               {title.rendered}
             </h3>
           </a>
-          <span
-          >{`${date.getMonth()}/${date.getDate()}/${date.getFullYear()}`}</span>
           <div
             className='flow-text'
             dangerouslySetInnerHTML={{

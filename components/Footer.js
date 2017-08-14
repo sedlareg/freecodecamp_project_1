@@ -13,9 +13,46 @@ export default class Footer extends Component {
           <div className='row white-text'>
             <div className='col s12 m3'>
               <h5 className='light'>Soziale Kanäle</h5>
-              <address>
-                <p />
-              </address>
+              <div id='fb-root' />
+              <script
+                type='application/javascript'
+                dangerouslySetInnerHTML={{
+                  __html: `(function(d, s, id) {\nvar js, fjs = d.getElementsByTagName(s)[0];\n
+                  if (d.getElementById(id)) return;\n js = d.createElement(s); js.id = id;\n
+                   js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.10";\n
+                   fjs.parentNode.insertBefore(js, fjs);\n
+                   }(document, 'script', 'facebook-jssdk'));`
+                }}
+              />
+              <div
+                className='fb-like'
+                data-href='http://www.geraldes.de'
+                data-width='250'
+                data-layout='button'
+                data-action='like'
+                data-size='small'
+                data-show-faces='false'
+                data-share='true'
+              />
+              <br />
+              <br />
+              <div>
+                <a
+                  href='https://twitter.com/share'
+                  className='twitter-share-button'
+                  data-hashtags='reboot'
+                >
+                  Tweet
+                </a>
+                <script
+                  type='application/javascript'
+                  dangerouslySetInnerHTML={{
+                    __html: `!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){
+                  js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}
+                  }(document, 'script', 'twitter-wjs');`
+                  }}
+                />
+              </div>
             </div>
             <div className='col s12 m6'>
               <h5 className='light'>Spruch des Tages</h5>

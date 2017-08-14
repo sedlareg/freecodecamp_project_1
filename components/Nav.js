@@ -42,7 +42,7 @@ export default class Nav extends Component {
           </li>
           <li>
             <Link prefetch href='/about'>
-              <a>About</a>
+              <a>Über mich</a>
             </Link>{' '}
           </li>
           <li>
@@ -62,7 +62,7 @@ export default class Nav extends Component {
           </li>
           <li>
             {' '}<Link prefetch href='/recipes'>
-              <a>Recipes</a>
+              <a>Rezepte</a>
             </Link>{' '}
           </li>
           <li>

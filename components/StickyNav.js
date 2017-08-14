@@ -13,7 +13,7 @@ export default class StickyNav extends Component {
         <ul className='hide-on-med-and-down'>
           <li>
             <Link prefetch href='/about'>
-              <a>About</a>
+              <a>Über mich</a>
             </Link>
           </li>
           <li>
@@ -33,7 +33,7 @@ export default class StickyNav extends Component {
           </li>
           <li>
             <Link prefetch href='/recipes'>
-              <a>Recipes</a>
+              <a>Rezepte</a>
             </Link>
           </li>
           <li>
@@ -61,7 +61,7 @@ export default class StickyNav extends Component {
               font-weight: 600;
             }
             .bottom-nav ul li a:hover {
-              background-color: hsl(172, 60%, 50%);
+              background-color: hsl(8, 100%, 75%);
             }
           `}
         </style>

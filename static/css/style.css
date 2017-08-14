@@ -74,12 +74,12 @@ iframe {
   color: #fff; }
 
 .btn-inverted-white {
-  border: solid 2px #fff;
-  background-color: transparent;
+  /*border: solid 2px #fff;*/
+  background-color: #A6CC40;
   color: #fff; }
 .btn-inverted-white:hover, .btn-inverted-white:focus {
-  border: solid 2px #fff;
-  background-color: #fff;
+  /*border: solid 2px #fff;*/
+  background-color: #FF9382;
   color: #000; }
 
 
@@ -311,7 +311,7 @@ nav .brand-logo img {
 }
 
 .bottom-nav ul li a:hover {
-  background-color: hsl(172, 60%, 48%);
+  background-color: hsl(8, 100%, 75%);
 }
 
 @media screen and (max-width: 600px) {
@@ -339,8 +339,15 @@ nav .brand-logo img {
   background-repeat: no-repeat;
   background-position: -10% 50%, 111% 50%; }
 
+/*
+284980
+FF9382
+69A1FF
+94B241
+A6CC40
+ */
 .red-background-flourish {
-  background-color: #a61f26;
+  background-color: #94B241;
   background-repeat: repeat-y;
   background-position: 0% 50%, 100% 50%; }
 

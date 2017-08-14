@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, StaticPage } from '../components'
+import { Layout, Page, StaticPage } from '../components'
 import 'isomorphic-fetch'
 import PropTypes from 'prop-types'
 
@@ -23,11 +23,25 @@ export default class Links extends React.Component {
     return (
       <Layout title='Links2' description='all links' headerType='interior'>
         <StaticPage
-          page={page}
           title='Links'
           mainId='links'
           imgPath='/static/new/links-title.jpg'
-        />
+        >
+          <div className='container'>
+            <div className='section'>
+              {page.map(function (element) {
+                return (
+                  <Page
+                    key={element.id}
+                    title={element.title}
+                    content={element.content}
+                    date={new Date(element.date)}
+                  />
+                )
+              })}
+            </div>
+          </div>
+        </StaticPage>
       </Layout>
     )
   }

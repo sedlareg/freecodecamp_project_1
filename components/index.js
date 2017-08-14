@@ -1,4 +1,6 @@
+export { default as ClickHeading } from './ClickHeading'
 export { default as Error404 } from './Error404'
+export { default as ExpandingSection } from './ExpandingSection'
 export { default as Footer } from './Footer'
 export { default as Head } from './Header'
 export { default as Hero } from './Hero'
